@@ -1,0 +1,446 @@
+[
+  {
+    "id": "525e2b57-f940-459d-90f6-e7782de8f7eb",
+    "question": "# state the output\nprint(2 + 3 * 5)",
+    "answer": "17",
+    "tags": ["arithmetic operators"]
+  },
+  {
+    "id": "06854aad-24c1-47e6-8619-8bb504c50408",
+    "question": "# complete the blank to output 6\nprint(15 _ 9)",
+    "answer": "-",
+    "tags": ["arithmetic operators"]
+  },
+  {
+    "id": "80f882fd-3605-4484-8951-ad63af3f6e51",
+    "question": "# state the output\nif 3 * 2 > 5:\n  print('True')\nelse:\n  print('False')",
+    "answer": "True",
+    "tags": ["arithmetic operators", "selection"]
+  },
+  {
+    "id": "6208bc78-3cb9-4eec-b182-7dca8682e2a4",
+    "question": "# complete the blank for correct operation\nif 10 // 2 __ 5:\n  print('Equal')",
+    "answer": "==",
+    "tags": ["arithmetic operators", "selection"]
+  },
+  {
+    "id": "19f94d04-beb4-4bd3-8753-ad8db09a968a",
+    "question": "# state the output\ntotal = 0\nfor i in range(5):\n  if i % 2 == 0:\n    total = total + i\nprint(total)",
+    "answer": "6",
+    "tags": ["arithmetic operators", "repetition"]
+  },
+  {
+    "id": "7c3834e6-09cf-4fcf-a94b-00acbb0ea388",
+    "question": "# complete the blank to total the numbers\ntotal = 0\n___ i in range(3):\n  total += i\nprint(total)",
+    "answer": "for",
+    "tags": ["arithmetic operators", "repetition"]
+  },
+  {
+    "id": "7365d055-a6f8-4fa8-b377-75a2d933facb",
+    "question": "# state the output\nnumbers = [15, 25, 35]\nprint(numbers[2] // 10)",
+    "answer": "3",
+    "tags": ["arithmetic operators", "lists"]
+  },
+  {
+    "id": "2fb4454c-d00d-4e03-9ba0-61c0d9871f27",
+    "question": "# complete the blank for output 162\nnums = [3, 6, 9]\nproduct = nums[0] * nums[1] _ nums[2]\nprint(product)",
+    "answer": "*",
+    "tags": ["arithmetic operators", "lists"]
+  },
+  {
+    "id": "be1f210e-57a4-4f5e-aaa2-30e6f9c4d7e3",
+    "question": "# state the output\ndef power(pBase, pExponent):\n  return pBase ** pExponent\n\nprint(power(2, 3))",
+    "answer": "8",
+    "tags": ["arithmetic operators", "subprograms"]
+  },
+  {
+    "id": "618f6ca9-c11f-4c54-9b11-342701695e0e",
+    "question": "# complete the blank to return the remainder and hence output 1\ndef mod(a, b):\n  return a _ b\n\nprint(mod(10, 3))",
+    "answer": "%",
+    "tags": ["arithmetic operators", "subprograms"]
+  },
+  {
+    "id": "8eead602-e802-4c08-aaa9-ce9943e12758",
+    "question": "# state the output\nprint(3 == 3)",
+    "answer": "True",
+    "tags": ["relational operators"]
+  },
+  {
+    "id": "c1c5b34a-4177-40b6-96f0-0d69802a7125",
+    "question": "# complete the single blank to output False\nprint(4 _ 5)",
+    "answer": ">",
+    "tags": ["relational operators"]
+  },
+  {
+    "id": "54bbddd5-50f4-4554-a0b7-bd5cdb048cff",
+    "question": "# state the output if the user enters 25\nif int(input('number?')) > 10:\n  print('big')\nelse:\n  print('small')",
+    "answer": "big",
+    "tags": ["relational operators", "selection"]
+  },
+  {
+    "id": "d475674b-5ac7-401d-90c0-7adbe84bb867",
+    "question": "# complete the two-character blank to check if the inputs are not the same\nif input('word 1') __ input('word 2'):\n  print('different')\nelse:\n  print('same')",
+    "answer": "!=",
+    "tags": ["relational operators"]
+  },
+  {
+    "id": "cff28e66-2231-4cb8-b053-49d3debe1802",
+    "question": "# state the output\nprint(10 >= 10)",
+    "answer": "True",
+    "tags": ["relational operators"]
+  },
+  {
+    "id": "933f0958-1724-417e-b3f8-e1bdf436e7a2",
+    "question": "# complete the blank with a relational operator to produce exactly 2 lines of output\nfor i in range(3):\n  if i _ 2:\n    print(i)",
+    "answer": "<",
+    "tags": ["relational operators", "repetition"]
+  },
+  {
+    "id": "c8896c7f-b2da-4fba-b780-98eb05373ff4",
+    "question": "# state the output\nnumbers = [9, 7, 5]\nprint(numbers[0] >= numbers[2])",
+    "answer": "True",
+    "tags": ["relational operators", "lists"]
+  },
+  {
+    "id": "7531c16e-3b17-4d82-946d-adf1fed1e0c5",
+    "question": "# complete the blank to make the function operate correctly\ndef isOverOneHundred(pValue):\n  return pValue _ 100\n\nprint(isOverOneHundred(37))",
+    "answer": ">",
+    "tags": ["relational operators", "subprograms"]
+  },
+  {
+    "id": "4ee3d043-d030-4a4c-be48-61a1337d78ee",
+    "question": "# state how many lines of output\ntext = 'ABCDEFGHIJKL'\nidx = 0\nwhile text[idx] != 'G':\n  print(text[idx])\n  idx += 2",
+    "answer": "3",
+    "tags": ["relational operators", "repetition"]
+  },
+  {
+    "id": "bfd9d9ed-efdb-4dc9-8076-fbc9f5d1a29c",
+    "question": "# complete the blank to print True if the inputted number is negative\ndef isPositive(pNumber):\n  return pNumber > 0\n\ndef isNegative(pNumber):\n  return pNumber < 0\n\ndef isZero(pNumber):\n  return pNumber == 0\n\nprint(__________(int(input('Enter a number: '))))",
+    "answer": "isNegative",
+    "tags": ["relational operators", "subprograms"]
+  },
+  {
+    "id": "1f65ad4b-e79d-42e5-99a1-3c8a92a17862",
+    "question": "# state the output\nprint(True or False)",
+    "answer": "True",
+    "tags": ["logical operators"]
+  },
+  {
+    "id": "8ec575d2-0d7b-4a58-92a9-c5c2b8a4b3c3",
+    "question": "# complete the blank to produce output False\nprint(True ___ False)",
+    "answer": "and",
+    "tags": ["logical operators"]
+  },
+  {
+    "id": "d4b9e5a3-3cde-4e4d-b943-0df7e8c2c9b5",
+    "question": "# state the output\nif not False:\n  print('a')\nelse:\n  print('b')",
+    "answer": "a",
+    "tags": ["logical operators", "selection"]
+  },
+  {
+    "id": "a4d20fbb-7f9c-4a8f-9897-0b81d8c8b45f",
+    "question": "# complete the five-letter blank to produce output b\nif not ____:\n  print('a')\nelse:\n  print('b')",
+    "answer": "True",
+    "tags": ["logical operators", "selection"]
+  },
+  {
+    "id": "5df76055-fb6f-4b79-81b6-ba5e5f6a4c81",
+    "question": "# state the output\nresult = True\nfor count in range(5):\n  result = not result\n\nprint(result)",
+    "answer": "False",
+    "tags": ["logical operators", "repetition"]
+  },
+  {
+    "id": "aeed3a8e-2185-4d76-86f7-ee3c6f5e5eab",
+    "question": "# complete the blank to continually input until the user enters a 5 leter word\nvalid = False\nwhile ___ valid:\n  word = input('5 letter word?')\n  if len(word) == 5:\n    valid = True",
+    "answer": "not",
+    "tags": ["logical operators", "repetition", "string processing"]
+  },
+  {
+    "id": "0fabe3a0-87f9-4a39-8d7e-1f746d9c4ac8",
+    "question": "# state the output\nvalues = [True, False, True]\nprint(not values[1] and values[2])",
+    "answer": "True",
+    "tags": ["logical operators", "lists"]
+  },
+  {
+    "id": "b70c478a-d4b7-44b5-9a1d-d5d34e5e2d72",
+    "question": "# complete the blank with a logical operator to produce output False\nvalues = [True, False, True]\nresult = True\nfor val in values:\n  result = result ___ val\n\nprint(result)",
+    "answer": "and",
+    "tags": ["logical operators", "lists", "iteration"]
+  },
+  {
+    "id": "5c1e9032-0e76-4a16-9f77-bb8a5d0c2b22",
+    "question": "# state the output\ndef check_condition(a, b):\n  return a and not b\n\nprint(check_condition(True, False))",
+    "answer": "True",
+    "tags": ["logical operators", "subprograms"]
+  },
+  {
+    "id": "c8dfea78-5f56-42d5-b9b1-f0f5d44a8c21",
+    "question": "# complete the blank with a logical operator to produce output True\ndef check_values(val1, val2):\n  return val1 __ (not val2)\n\nprint(check_values(False, False))",
+    "answer": "or",
+    "tags": ["logical operators", "subprograms"]
+  },
+  {
+    "id": "9edf3b1e-3b0f-4d0f-93c1-7b1e32010b3f",
+    "question": "# state the output given that ord(97) is 'a'\nprint('{}{}{}'.format(chr(98), chr(97), chr(97)))",
+    "answer": "baa",
+    "tags": ["built-in subprograms", "string processing"]
+  },
+  {
+    "id": "b2dc72d4-2e69-4f1b-8fc5-c4f668c8cb9f",
+    "question": "# complete the blank to output 'z' given that ord('v') is 118\nprint(chr(_))",
+    "answer": "122",
+    "tags": ["built-in subprograms"]
+  },
+  {
+    "id": "26a4b2a2-0e72-4b7a-a6b4-00b0a92f4a8f",
+    "question": "# state the output\nif len('apple') > 4:\n  print('long')\nelse:\n  print('short')",
+    "answer": "long",
+    "tags": ["built-in subprograms", "selection"]
+  },
+  {
+    "id": "cb8a7bf9-cd2f-4c8c-8e2e-3d5a5a3e7a9f",
+    "question": "# complete the blank to validate whether the user's password is sufficiently long\nif ___(input('password?') >= 8:\n  print('Enough')\nelse:\n  print('Too short')",
+    "answer": "len",
+    "tags": ["built-in subprograms", "selection"]
+  },
+  {
+    "id": "5d2f7d5e-f9aa-45d9-a3d2-4e1c4a1dcf2e",
+    "question": "# state the output given that ord('A') is 65\ntotal = 0\nfor char in 'AC':\n  total += ord(char)\nprint(total)",
+    "answer": "132",
+    "tags": ["built-in subprograms", "iteration"]
+  },
+  {
+    "id": "da2e7b5b-32c8-40d9-8a8a-6d4b6f4a4a8e",
+    "question": "# complete the blank to calculate the sum of ASCII values of 'abc'\ntotal = 0\nfor letter in 'abc':\n  total += ___(letter)\nprint(total)",
+    "answer": "ord",
+    "tags": ["built-in subprograms", "iteration"]
+  },
+  {
+    "id": "c91cbbf4-5084-4b5b-8d0b-80b8b8c8f1f2",
+    "question": "# state the output\nnumbers = [len('one'), len('two'), len('three')]\nprint(numbers[2])",
+    "answer": "5",
+    "tags": ["built-in subprograms", "lists"]
+  },
+  {
+    "id": "f7b2f9f1-9f9e-4a3e-8f6c-b3d50dce8fd3",
+    "question": "# complete the blank to output a comma-separated list of the word-lengths\nwords = ['Python', 'is', 'amazing']\nresult = ''\nsep = ''\nfor word in words:\n  result += sep + str(___(word))\n  sep = ','\nprint(result)",
+    "answer": "len",
+    "tags": ["built-in subprograms", "lists", "iteration"]
+  },
+  {
+    "id": "3777f9f8-66a9-4e0c-b91a-c79b0c2a8a1f",
+    "question": "# state the output\ndef average_length(pWords):\n  total_length = 0\n  for word in pWords:\n    total_length = total_length + len(word)\n  return round(total_length / len(pWords), 0)\n\nprint(average_length('hello worlds all'.split(' ')))",
+    "answer": "5",
+    "tags": ["built-in subprograms", "subprograms", "iteration"]
+  },
+  {
+    "id": "5d504a2d-ff6d-4f02-bec0-82f0b7c88a0f",
+    "question": "# complete the blank to return the rounded average of ASCII values in a string\ndef avg_ascii(pText):\n  total = 0\n  for ch in pText:\n    total += ___(ch)\n  return round(total / len(pText))\n\nprint(avg_ascii('data'))",
+    "answer": "ord",
+    "tags": ["built-in subprograms", "subprograms", "iteration"]
+  },
+  {
+    "id": "e2a3b4c5-d6f7-48f8-9a0b-c1d2e3f4g5h6",
+    "question": "# state the output\nnumbers = [1, 2, 3]\nif len(numbers) > 2:\n  numbers.append(4)\nprint(numbers[2:4])",
+    "answer": "[3, 4]",
+    "tags": ["lists", "selection"]
+  },
+  {
+    "id": "f1a2b3c4-d5e6-f7g8-9h0i-j1k2l3m4n5o6",
+    "question": "# complete the blank to remove the second item\nnumbers = [10, 20, 30, 40]\ndel numbers[__]\nprint(numbers)",
+    "answer": "1",
+    "tags": ["lists"]
+  },
+  {
+    "id": "g2h3i4j5-k6l7-m8n9-o0p1-q2r3s4t5u6v7",
+    "question": "# state the output\nnumbers = [5, 10, 15]\nfor i in range(0, len(numbers)):\n  numbers[i] = numbers[i] * 2\nprint(numbers[1])",
+    "answer": "20",
+    "tags": ["lists", "iteration"]
+  },
+  {
+    "id": "h3i4j5k6-l7m8-n9o0-p1q2-r3s4t5u6v7w8",
+    "question": "# complete the blank to square each item stored in the list\nnumbers = [1, 2, 3]\nfor i in range(0, len(numbers)):\n  numbers[i] = numbers[i] __ 2\nprint(numbers)",
+    "answer": "2",
+    "tags": ["lists", "iteration", "arithmetic operators"]
+  },
+  {
+    "id": "i4j5k6l7-m8n9-o0p1-q2r3-s4t5u6v7w8x9",
+    "question": "# state the output\ndef shiftToEnd(pList):\n  item = pList[0]\n  del pList[0]\n  pList.append(item)\nnumbers = [1, 2, 3, 4]\nshiftToEnd(numbers)\nprint(numbers[3])",
+    "answer": "1",
+    "tags": ["lists", "subprograms"]
+  },
+  {
+    "id": "j5k6l7m8-n9o0-p1q2-r3s4-t5u6v7w8x9y0",
+    "question": "# complete the single blank to insert 'young' before the first item\nitems = ['old', 'older', 'oldest']\nitems.insert(_, 'young')",
+    "answer": "0",
+    "tags": ["lists"]
+  },
+  {
+    "id": "a1b2c3d4-e5f6-11ea-adc1-0242ac120002",
+    "question": "# state the output\nprint('hello'.find('e'))",
+    "answer": "1",
+    "tags": ["string processing"]
+  },
+  {
+    "id": "b2c3d4e5-f6a7-11ea-adc1-0242ac120002",
+    "question": "# complete the blank to output 4\nprint('hello world'.index(___))",
+    "answer": "'o'",
+    "tags": ["string processing"]
+  },
+  {
+    "id": "c3d4e5f6-07b8-11eb-adc1-0242ac120002",
+    "question": "# state the output\nprint('apple'.isalpha())",
+    "answer": "True",
+    "tags": ["string processing"]
+  },
+  {
+    "id": "d4e5f607-18c9-11eb-adc1-0242ac120002",
+    "question": "# state the output\nprint('123abc'.upper())",
+    "answer": "123ABC",
+    "tags": ["string processing", "selection"]
+  },
+  {
+    "id": "e5f60618-29d0-11eb-adc1-0242ac120002",
+    "question": "# state the output\nresult = ''\n\nfor char in '57x12yz':\n  if char.isdigit():\n    result = char\n\nprint(result)",
+    "answer": "2",
+    "tags": ["string processing", "iteration"]
+  },
+  {
+    "id": "f6071829-3ae1-11eb-adc1-0242ac120002",
+    "question": "# state the output\nresult = ''\n\nfor char in 'ABC':\n  result = result + char.lower() + ','\n\nprint(result)",
+    "answer": "a,b,c,",
+    "tags": ["string processing", "iteration"]
+  },
+  {
+    "id": "0718293a-4bf2-11eb-adc1-0242ac120002",
+    "question": "# complete the single blank to produce output ['a', 'b', 'c']\nletters = 'a;b;c'.split('_')\nprint(letters)",
+    "answer": ";",
+    "tags": ["string processing", "lists"]
+  },
+  {
+    "id": "18293a4b-5cg3-11eb-adc1-0242ac120002",
+    "question": "# complete the single blank to output World\nwords = 'Hello World'.split(' ')\nprint(words[_])",
+    "answer": "1",
+    "tags": ["string processing", "lists"]
+  },
+  {
+    "id": "293a4b5c-6dh4-11eb-adc1-0242ac120002",
+    "question": "# state the output\ndef shout(pText):\n  return pText.upper()\n\nprint(shout('hello'))",
+    "answer": "HELLO",
+    "tags": ["string processing", "subprograms"]
+  },
+  {
+    "id": "3a4b5c6d-7ei5-11eb-adc1-0242ac120002",
+    "question": "# complete the blank to output a string with the asterisks either end of the string removed\ndef trim(pText):\n  return pText._____('*')\n\nprint(trim('***hello***'))",
+    "answer": "strip",
+    "tags": ["string processing", "subprograms"]
+  },
+  {
+    "id": "4b5c6d7e-8fj6-11eb-adc1-0242ac120002",
+    "question": "# state the output\nprint('Data'.lower())",
+    "answer": "data",
+    "tags": ["string processing", "simple calculation / variables"]
+  },
+  {
+    "id": "5c6d7e8f-9gk7-11eb-adc1-0242ac120002",
+    "question": "# state the output if the user enters 12xy\nchoice = input('entry?')\nif choice.isdigit():\n  print('abc')\nelse:\n  print('def')",
+    "answer": "def",
+    "tags": ["string processing", "selection"]
+  },
+  {
+    "id": "6d7e8f9g-ahk8-11eb-adc1-0242ac120002",
+    "question": "# state the output\nword='Hello'\nif word.islower():\n  print('lowercase')\nelif word.isupper()\n  print('uppercase')\nelse:\n  print('mixed')",
+    "answer": "mixed",
+    "tags": ["string processing", "selection"]
+  },
+  {
+    "id": "7e8f9g0h-bil9-11eb-adc1-0242ac120002",
+    "question": "# how many lines of output?\ndata = ['x', '3', 'r', '%', '2']\nindex = 0\n\nwhile data[index].isalnum() and index < len(data):\n  print('!')\n  index = index + 1",
+    "answer": "3",
+    "tags": ["string processing", "iteration"]
+  },
+  {
+    "id": "8f9g0h1i-cjm0-11eb-adc1-0242ac120002",
+    "question": "# state the output\ndef doRemove(pWord, pLetter)\n  return pWord.replace(pLetter, '')\n\nprint(doRemove('one and all', ' '))",
+    "answer": "oneandall",
+    "tags": ["string processing", "subprograms"]
+  },
+  {
+    "id": "9a8b7c6d-5e4f-3a2b-1c0d-e9f8g7h6i5j4",
+    "question": "# state the output\nprint('{} and {}'.format('coffee', 'tea'))",
+    "answer": "coffee and tea",
+    "tags": ["string formatting"]
+  },
+  {
+    "id": "8c7d6e5f-4a3b-2c1d-0e9f-8g7h6i5j4k3l",
+    "question": "# complete the two-letter blank to output 'Tea and Coffee'\nprint('{} and __'.format('Tea', 'Coffee'))",
+    "answer": "{}",
+    "tags": ["string formatting"]
+  },
+  {
+    "id": "08070605-e403-c201-b100-9a8b7c6d5e4f",
+    "question": "# complete the blank to format and return the greeting in uppercase\ndef greet(pName):\n  return 'HELLO, {}!'.______(pName.upper())\n\nprint(greet('python'))",
+    "answer": "format",
+    "tags": ["string formatting", "subprograms"]
+  },
+  {
+    "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+    "question": "# state the output\nprint('{:<3}|{:^3}|{:>3}'.format('a', 'b', 'c'))",
+    "answer": "a  | b |  c",
+    "tags": ["string formatting"]
+  },
+  {
+    "id": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
+    "question": "# complete the two-space blank to achieve output 3.1\nprint('Pi rounded to 1 d.p. is {:__f}'.format(3.14159))",
+    "answer": ".1",
+    "tags": ["string formatting"]
+  },
+  {
+    "id": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r",
+    "question": "# state the output\nprint('|{:>5d}|'.format(42))",
+    "answer": "|   42|",
+    "tags": ["string formatting"]
+  },
+  {
+    "id": "4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s",
+    "question": "# complete the four-space blank to align the word 'Hello' to the right in 20 columns\nprint('{____}'.format('Hello'))",
+    "answer": ":>20",
+    "tags": ["string formatting"]
+  },
+  {
+    "id": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0t",
+    "question": "# state the output\nage = 25\nif age > 40:\n  print('{} is older'.format(age)\nelse:\n  print('{} is younger'.format(age))",
+    "answer": "25 is younger",
+    "tags": ["string formatting", "selection"]
+  },
+  {
+    "id": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u",
+    "question": "# complete the blank to state the access result\nif access:\n  result = 'granted'\nelse:\n  result = 'denied'\nprint('Access is {}'.format(______))",
+    "answer": "result",
+    "tags": ["string formatting", "selection"]
+  },
+  {
+    "id": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2v",
+    "question": "# state the output\nLAYOUT = '{},'\nresult = ''\nfor count in range(1, 4):\n  result += LAYOUT.format(count)\nprint(result)",
+    "answer": "1,2,3,",
+    "tags": ["string formatting", "repetition"]
+  },
+  {
+    "id": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3w",
+    "question": "# complete the three-space blank to output each list number rounded to 2dp\nnums = [2.3718, 1.7493, 5.3499]\nfor num in nums:\n  print('{:___}'.format(num))",
+    "answer": ".2f",
+    "tags": ["string formatting", "iteration"]
+  },
+  {
+    "id": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x",
+    "question": "# state the output of this function that formats a greeting message\ndef format_greeting(pName, pAge):\n  return '|{:^10}|{:>5d}|'.format(pName, pAge)\n\nprint(format_greeting('Alexa', 30))",
+    "answer": "|  Alexa   |   30|",
+    "tags": ["string formatting", "subprograms"]
+  },
+  {
+    "id": "0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y",
+    "question": "# complete the blank to define a function that formats a list of grades as a table\ndef format_grades(pGrades):\n  print('|Grade |')\n  for _____ in pGrades:\n    print('|{:^6}|'.format(grade))\n\nformat_grades(['B', 'E', 'C', 'A'])",
+    "answer": "grade",
+    "tags": ["string formatting", "subprograms", "iteration"]
+  }
+]

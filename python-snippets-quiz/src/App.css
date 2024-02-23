@@ -1,0 +1,19 @@
+.heading-padding-top {
+  padding-top: 10px;
+}
+
+.bootstrap-margin-right {
+  margin-right: 5px;
+}
+
+.streak-counter {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.question-area pre::first-line {
+  color: red;
+}
