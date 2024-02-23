@@ -17,3 +17,7 @@
 .question-area pre::first-line {
   color: red;
 }
+
+.incorrect pre {
+  color: red;
+}

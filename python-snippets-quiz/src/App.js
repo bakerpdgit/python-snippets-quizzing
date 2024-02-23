@@ -94,13 +94,15 @@ function App() {
     setIsCorrect(correct);
     setQuestionAnswered(true);
 
-    if (correct) {
-      setStreakCount(streakCount + 1);
-    } else {
-      setStreakCount(0); // Reset streak if the answer is wrong
-      // Add currentQuestionIndex to incorrectQuestions list if not already added
-      if (!incorrectQuestions.includes(currentQuestionIndex)) {
-        setIncorrectQuestions([...incorrectQuestions, currentQuestionIndex]);
+    if (!reviewMode) {
+      if (correct) {
+        setStreakCount(streakCount + 1);
+      } else {
+        setStreakCount(0); // Reset streak if the answer is wrong
+        // Add currentQuestionIndex to incorrectQuestions list if not already added
+        if (!incorrectQuestions.includes(currentQuestionIndex)) {
+          setIncorrectQuestions([...incorrectQuestions, currentQuestionIndex]);
+        }
       }
     }
   }, [
@@ -194,7 +196,13 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <h1 className="mb-4">Python Snippets Quiz</h1>
+      <h2 className="mb-4">Python Snippets Tracing Quiz</h2>
+      <p>
+        These snippets are designed to test basic knowledge of the EdExcel 9-1
+        GCSE Programming Language Subset. For this GCSE you are given a copy of
+        this document in the practical exam so you may wish to use a printed
+        copy for these exercises or web-search for an online copy.
+      </p>
       <div className="row">
         <div className="col-md-4">
           <Form>
@@ -215,7 +223,7 @@ function App() {
             />
           </Form>
           <div className="tag-selection">
-            <h3 className="heading-padding-top">Include Tags</h3>
+            <h4 className="heading-padding-top">Include Tags</h4>
             <div className="mb-2">
               <a
                 href="#"
@@ -249,7 +257,7 @@ function App() {
               </div>
             ))}
 
-            <h3 className="heading-padding-top">Exclude Tags</h3>
+            <h4 className="heading-padding-top">Exclude Tags</h4>
             <div className="mb-2">
               <a
                 href="#"
@@ -303,7 +311,6 @@ function App() {
               <code>{allQuestions[currentQuestionIndex].question}</code>
             </pre>{" "}
           </div>
-
           <div className="answer-area mb-3">
             <input
               ref={inputRef}
@@ -315,7 +322,6 @@ function App() {
               disabled={questionAnswered && showCorrect}
             />
           </div>
-
           <div className="navigation-buttons mb-3">
             <button
               onClick={handleSubmit}
@@ -334,12 +340,13 @@ function App() {
             {questionAnswered && !isCorrect && showCorrect && (
               <div className="feedback incorrect">
                 The correct answer was:{"  "}
-                {allQuestions[currentQuestionIndex].answer}
+                <pre>{allQuestions[currentQuestionIndex].answer}</pre>
               </div>
             )}
           </div>
-
-          <div className="streak-counter">Streak: {streakCount}</div>
+          {!reviewMode && (
+            <div className="streak-counter">Streak: {streakCount}</div>
+          )}
         </div>
       </div>
     </div>
