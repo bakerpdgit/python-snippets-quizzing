@@ -67,7 +67,7 @@
   },
   {
     "id": "c1c5b34a-4177-40b6-96f0-0d69802a7125",
-    "question": "# complete the single blank to output False\nprint(4 _ 5)",
+    "question": "# complete the single blank with a relational operator to output False\nprint(4 _ 5)",
     "answer": ">",
     "tags": ["relational operators"]
   },
@@ -91,7 +91,7 @@
   },
   {
     "id": "933f0958-1724-417e-b3f8-e1bdf436e7a2",
-    "question": "# complete the single blank with a relational operator to produce exactly 2 lines of output\nfor i in range(3):\n  if i _ 2:\n    print(i)",
+    "question": "# complete the single blank with a relational operator to output exactly 2 lines\nfor i in range(3):\n  if i _ 2:\n    print(i)",
     "answer": "<",
     "tags": ["relational operators", "repetition"]
   },
@@ -139,7 +139,7 @@
   },
   {
     "id": "a4d20fbb-7f9c-4a8f-9897-0b81d8c8b45f",
-    "question": "# complete the five-space blank to produce output b\nif not ____:\n  print('a')\nelse:\n  print('b')",
+    "question": "# complete the five-space blank with a boolean value to produce output b\nif not ____:\n  print('a')\nelse:\n  print('b')",
     "answer": "True",
     "tags": ["logical operators", "selection"]
   },
@@ -151,7 +151,7 @@
   },
   {
     "id": "aeed3a8e-2185-4d76-86f7-ee3c6f5e5eab",
-    "question": "# complete the blanks with a logical operator to continually input until the user enters a 5 leter word\nvalid = False\nwhile ___ valid:\n  word = input('5 letter word?')\n  if len(word) == 5:\n    valid = True",
+    "question": "# complete the blanks with a logical operator to loop until a 5 leter word is input\nvalid = False\nwhile ___ valid:\n  word = input('5 letter word?')\n  if len(word) == 5:\n    valid = True",
     "answer": "not",
     "tags": ["logical operators", "repetition", "string processing"]
   },
@@ -199,7 +199,7 @@
   },
   {
     "id": "cb8a7bf9-cd2f-4c8c-8e2e-3d5a5a3e7a9f",
-    "question": "# complete the three-space blank to validate whether the user's password is sufficiently long\nif ___(input('password?') >= 8:\n  print('Enough')\nelse:\n  print('Too short')",
+    "question": "# complete the three-space blank to validate the user's password\nif ___(input('password?') >= 8:\n  print('Enough')\nelse:\n  print('Too short')",
     "answer": "len",
     "tags": ["built-in subprograms", "selection"]
   },
@@ -223,7 +223,7 @@
   },
   {
     "id": "f7b2f9f1-9f9e-4a3e-8f6c-b3d50dce8fd3",
-    "question": "# complete the three-space blank to output a comma-separated list of the word-lengths\nwords = ['Python', 'is', 'amazing']\nresult = ''\nsep = ''\nfor word in words:\n  result += sep + str(___(word))\n  sep = ','\nprint(result)",
+    "question": "# complete the three-space blank to output a comma-separated list of word-lengths\nwords = ['Python', 'is', 'amazing']\nresult = ''\nsep = ''\nfor word in words:\n  result += sep + str(___(word))\n  sep = ','\nprint(result)",
     "answer": "len",
     "tags": ["built-in subprograms", "lists", "iteration"]
   },
@@ -331,7 +331,7 @@
   },
   {
     "id": "3a4b5c6d-7ei5-11eb-adc1-0242ac120002",
-    "question": "# complete the five-space blank to output a string with the asterisks either end of the string removed\ndef trim(pText):\n  return pText._____('*')\n\nprint(trim('***hello***'))",
+    "question": "# complete the five-space blank to output a string with the asterisks either end removed\ndef trim(pText):\n  return pText._____('*')\n\nprint(trim('***hello***'))",
     "answer": "strip",
     "tags": ["string processing", "subprograms"]
   },
@@ -339,7 +339,7 @@
     "id": "4b5c6d7e-8fj6-11eb-adc1-0242ac120002",
     "question": "# state the output\nprint('Data'.lower())",
     "answer": "data",
-    "tags": ["string processing", "simple calculation / variables"]
+    "tags": ["string processing"]
   },
   {
     "id": "5c6d7e8f-9gk7-11eb-adc1-0242ac120002",
@@ -391,9 +391,9 @@
   },
   {
     "id": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
-    "question": "# complete the two-space blank to achieve output 3.1\nprint('Pi rounded to 1 d.p. is {:__f}'.format(3.14159))",
+    "question": "# complete the two-space blank to achieve output 3.1\nimport math\n\nprint('Pi rounded to 1 d.p. is {:__f}'.format(math.pi))",
     "answer": ".1",
-    "tags": ["string formatting"]
+    "tags": ["string formatting", "library imports", "math"]
   },
   {
     "id": "749a0d7e-0cf1-4de1-b846-7355bbd61aeb",
@@ -409,13 +409,13 @@
   },
   {
     "id": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0t",
-    "question": "# state the output\nage = 25\nif age > 40:\n  print('{} is older'.format(age)\nelse:\n  print('{} is younger'.format(age))",
-    "answer": "25 is younger",
+    "question": "# state the output\nage = 25\nif age > 50:\n  print('{} is grown up'.format(age)\nelse:\n  print('{} is young'.format(age))",
+    "answer": "25 is young",
     "tags": ["string formatting", "selection"]
   },
   {
     "id": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u",
-    "question": "# complete the six-space blank to state the access result\nif access:\n  result = 'granted'\nelse:\n  result = 'denied'\nprint('Access is {}'.format(______))",
+    "question": "# complete the six-space blank to state the access result\nif access:\n  result = 'granted'\nelse:\n  result = 'denied'\n\nprint('Access is {}'.format(______))",
     "answer": "result",
     "tags": ["string formatting", "selection"]
   },
@@ -439,7 +439,7 @@
   },
   {
     "id": "0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y",
-    "question": "# complete the five-space blank to define a function that formats a list of grades as a table\ndef format_grades(pGrades):\n  print('|Grade |')\n  for _____ in pGrades:\n    print('|{:^6}|'.format(grade))\n\nformat_grades(['B', 'E', 'C', 'A'])",
+    "question": "# complete the five-space blank to format a list of grades as a table\ndef format_grades(pGrades):\n  print('|Grade |')\n  for _____ in pGrades:\n    print('|{:^6}|'.format(grade))\n\nformat_grades(['B', 'E', 'C', 'A'])",
     "answer": "grade",
     "tags": ["string formatting", "subprograms", "iteration"]
   },
@@ -523,7 +523,7 @@
   },
   {
     "id": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8",
-    "question": "# complete the five-space blank for the function to return the largest integer less than or equal to its parameter\nimport math\n\ndef roundDown(pNum):\n  return math._____(pNum)\n\nprint(roundDown(float(input('number?')))",
+    "question": "# complete the five-space blank to round *down* to the nearest integer\nimport math\n\ndef roundDown(pNum):\n  return math._____(pNum)\n\nprint(roundDown(float(input('number?')))",
     "answer": "floor",
     "tags": ["library imports", "math", "subprograms"]
   },
@@ -547,31 +547,31 @@
   },
   {
     "id": "b2d4f6h8-j0l2-n3p5-r7t9-v1w3-x5z7-y9u1",
-    "question": "# complete the two-space blank to calculate the circumference of a circle with radius 5\nimport math\ncirc = 2 * math.__ * 5\nprint(round(circ, 2))",
+    "question": "# complete the two-space blank to find the circumference of a circle radius 5\nimport math\ncirc = 2 * math.__ * 5\nprint(round(circ, 2))",
     "answer": "pi",
     "tags": ["library imports", "math"]
   },
   {
     "id": "c3f5i7k9-l1m3-o5q7-s9u1-w3y5-z7x9-v2t4",
-    "question": "# state the output if the user enters 18.2\nimport math\n\nnum = float(input('number?'))\nif math.sqrt(x) > 8:\n  print('huge')\nelif math.sqrt(x) > 4:\n  print('big')\nelse:\n  print('small')",
+    "question": "# state the output if the user enters 18.2\nimport math\n\nnum = float(input('number?'))\nif math.sqrt(num) > 8:\n  print('huge')\nelif math.sqrt(num) > 4:\n  print('big')\nelse:\n  print('small')",
     "answer": "big",
     "tags": ["library imports", "math", "selection"]
   },
   {
     "id": "d4g6i8k0-m2n4-p6r8-t0v2-x3y5-z7w9-u1s3",
-    "question": "# complete the four-space blank to print the value of pi in a loop to increasing precision\nimport math\nfor count in range(1, 5):\n  print('{:.{}f}'.format(____.pi, count))",
+    "question": "# complete the four-space blank to print out pi to increasing precision\nimport math\nfor count in range(1, 5):\n  print('{:.{}f}'.format(____.pi, count))",
     "answer": "math",
     "tags": ["library imports", "math", "iteration", "string formatting"]
   },
   {
     "id": "e5g7i9k1-m3n5-q7s9-u2v4-w6x8-y0z2",
-    "question": "# state the output of calling the function with 49\nimport math\ndef doCalc(pNum):\n  return pNum ** 2 + int(math.sqrt(pNum)))\n\nprint(doCalc(9))",
+    "question": "# state the output\nimport math\n\ndef doCalc(pNum):\n  return pNum ** 2 + int(math.sqrt(pNum)))\n\nprint(doCalc(9))",
     "answer": "84",
     "tags": ["library imports", "math", "subprograms", "arithmetic operators"]
   },
   {
     "id": "10a20b30-c40d-50e6-f70g-80h90i0j1k2l",
-    "question": "# state the output if 'data.txt' contains a single line: 'hello world'\nfile = open('data.txt', 'r')\nmessage = file.readline())\nfile.close()\nprint(message.split(' ')[0])",
+    "question": "# state the output if 'data.txt' contains a single line: 'hello world'\nfile = open('data.txt', 'r')\nmessage = file.readline()\nfile.close()\nprint(message.split(' ')[0])",
     "answer": "hello",
     "tags": ["file operations", "lists"]
   },
@@ -583,13 +583,13 @@
   },
   {
     "id": "30c40d50-e60f-70g8-h80i-90j0k1l2m3n4",
-    "question": "# state the output if 'config.txt' contains five lines\nFILENAME = 'config.txt'\nsettings = ['loaded', 'active']\nfile = open(FILENAME, 'r')\n\nfor line in file:\n  settings.append(line.strip())\nfile.close()\n\nprint(len(settings))",
+    "question": "# state the output if 'config.txt' contains five lines\nFILENAME = 'config.txt'\nsettings = ['loaded', 'active']\nfile = open(FILENAME, 'r')\n\nfor line in file:\n  settings.append(line.strip())\n\nfile.close()\nprint(len(settings))",
     "answer": "7",
     "tags": ["file operations", "iteration", "lists"]
   },
   {
     "id": "40d50e60-f70g-80h8-i90j-0k1l2m3n4o5",
-    "question": "# complete the three-space blank to display the relevant message\nFILENAME = 'settings.txt'\nsettings = []\nfile = open(FILENAME, 'r')\nsettings = file.readlines()\nfile.close()\n\nif ___(settings) > 0:\n  print('settings loaded')\nelse:\n  print('no settings found')",
+    "question": "# complete the three-space blank to display the relevant message\nFILENAME = 'settings.txt'\nfile = open(FILENAME, 'r')\nsettings = file.readlines()\nfile.close()\n\nif ___(settings) > 0:\n  print('settings found')\nelse:\n  print('no settings found')",
     "answer": "len",
     "tags": ["file operations", "selection", "lists"]
   },
@@ -607,7 +607,7 @@
   },
   {
     "id": "70g80h90-i80j-90k0-l1m2-3n4o5p6q7r8",
-    "question": "# complete the five-space blank to write the firstname & surname, comma-separated, to the file\ndef writeLog(pFilename, pFirstname, pSurname):\n  LAYOUT = '{},{}\\n'  'file = open(pFilename, 'w')\n  file._____(LAYOUT.format(pSurname, pFirstname))\n  file.close()\n\nwriteLog('name.txt', 'Alan', 'Turing')",
+    "question": "# complete the five-space blank to write the firstname & surname, comma-separated, to the file\ndef writeLog(pFilename, pFirstname, pSurname):\n  LAYOUT = '{},{}\\n'  \nfile = open(pFilename, 'w')\n  file._____(LAYOUT.format(pSurname, pFirstname))\n  file.close()\n\nwriteLog('name.txt', 'Alan', 'Turing')",
     "answer": "write",
     "tags": ["file operations", "subprograms"]
   },
@@ -619,13 +619,13 @@
   },
   {
     "id": "fb097277-a02e-4164-9bb5-0a051f24cd34",
-    "question": "# How many newline characters does the text file contain after execution?\nLAYOUT = '{}{}'\nletters = ['a', 'b', 'c']\nsep = ''\nfile = open('letters.txt', 'w')\n\nfor letter in letters:\n  file.write(LAYOUT.format(sep, letter))\n  sep = '\\n'\n\n\nfile.close()",
+    "question": "# How many newline characters does the text file contain after execution?\nLAYOUT = '{}{}'\nletters = ['a', 'b', 'c']\nsep = ''\nfile = open('letters.txt', 'w')\n\nfor letter in letters:\n  file.write(LAYOUT.format(sep, letter))\n  sep = '\\n'\n\nfile.close()",
     "answer": "2",
     "tags": ["file operations", "iteration"]
   },
   {
     "id": "01f14e9e-24e4-4e67-a8c1-0f9e12e0567c",
-    "question": "# complete the five-space blank to change the size of the turtle graphics window to 200x200 and leave it visible\nimport turtle\n\nwindow = turtle.Screen()\nwindow._____(200, 200)\nturtle.done()",
+    "question": "# complete the five-space blank to change the size of the turtle graphics window to 200x200\nimport turtle\n\nwindow = turtle.Screen()\nwindow._____(200, 200)\nturtle.done()",
     "answer": "setup",
     "tags": ["turtle graphics", "library imports"]
   },
@@ -637,7 +637,7 @@
   },
   {
     "id": "03g26g0g-46g6-6g89-c0e3-2gb234g2789e",
-    "question": "# complete the seven-space blank to move myTurtle forward by 50 units\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle.forward(50)\nturtle.done()",
+    "question": "# complete the seven-space blank to move myTurtle forward by 50 units\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle._______(50)\nturtle.done()",
     "answer": "forward",
     "tags": ["turtle graphics", "library imports"]
   },
@@ -669,17 +669,17 @@
     "id": "09m82m6m-a2m2-2m45-i6k9-8mh890m8345k",
     "question": "# complete the eight-space blank to fill the shape with color\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle.fillcolor('red')\nmyTurtle.begin_fill()\nmyTurtle.circle(50)\nmyTurtle.________()\nmyTurtle.done()",
     "answer": "end_fill",
-    "tags": ["turtle graphics", "advanced usage", "library imports"]
+    "tags": ["turtle graphics", "library imports"]
   },
   {
     "id": "0a8b9c0d-e1f2-d3c4-b5a6-97f8e9d0c1b2",
-    "question": "# complete the four-space blank to iterate over moves list and apply distance and turn\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmoves = [[100, 90], [100, 90], [100, 90], [100, 90]]\n\nfor move in moves:\n  myTurtle.forward(move[0])\n  myTurtle.right(____[1])\n\nmyTurtle.done()",
+    "question": "# complete the four-space blank to iterate over moves list and apply distance & turn\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmoves = [[100, 90], [100, 90], [100, 90], [100, 90]]\n\nfor move in moves:\n  myTurtle.forward(move[0])\n  myTurtle.right(____[1])\n\nmyTurtle.done()",
     "answer": "move",
     "tags": ["turtle graphics", "iteration", "library imports", "lists"]
   },
   {
     "id": "c5d7f9g1-k3m5-o7q9-s3u5-w7y9-x3y1",
-    "question": "# complete the eight-space blank to change the drawing pen color to 'blue'\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle.______('blue')\nmyTurtle.forward(100)\nturtle.done()",
+    "question": "# complete the eight-space blank to change the drawing pen color to blue\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle.______('blue')\nmyTurtle.forward(100)\nturtle.done()",
     "answer": "pencolor",
     "tags": ["turtle graphics", "library imports"]
   },
@@ -709,7 +709,7 @@
   },
   {
     "id": "20i3k5m7-o9q1-s3u5-w7y9-x1b3-d5f7",
-    "question": "# complete the seven-space blank to lift the pen, move the turtle, and then lower the pen to continue drawing\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle.________\nmyTurtle.goto(100, 100)\nmyTurtle.forward(100)\nmyTurtle.done()",
+    "question": "# complete the seven-space blank to lift the pen, move the turtle, and then lower the pen to continue\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle.________\nmyTurtle.goto(100, 100)\nmyTurtle.pendown()\nmyTurtle.forward(100)\nmyTurtle.done()",
     "answer": "penup()",
     "tags": ["turtle graphics", "library imports"]
   },
@@ -739,7 +739,7 @@
   },
   {
     "id": "70n8o0q2-t6v8-x4y6-a8c0-e2g4-f4h6",
-    "question": "# complete the nine-space blank to set the fill color to 'blue' before starting a filled shape\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle._________('red')\nmyTurtle.begin_fill()\nmyTurtle.circle(50)\nmyTurtle.end_fill()\nmyTurtle.done()",
+    "question": "# complete the nine-space blank to set the fill color to 'red' before starting a filled shape\nimport turtle\n\nmyTurtle = turtle.Turtle()\nmyTurtle._________('red')\nmyTurtle.begin_fill()\nmyTurtle.circle(50)\nmyTurtle.end_fill()\nmyTurtle.done()",
     "answer": "fillcolor",
     "tags": ["turtle graphics", "library imports"]
   }

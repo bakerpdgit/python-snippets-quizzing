@@ -196,12 +196,13 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">Python Snippets Tracing Quiz</h2>
+      <h2 className="mb-4">Python Snippets Dry-Run Quiz</h2>
       <p>
         These snippets are designed to test basic knowledge of the EdExcel 9-1
         GCSE Programming Language Subset. For this GCSE you are given a copy of
         this document in the practical exam so you may wish to use a printed
-        copy for these exercises or web-search for an online copy.
+        copy for these exercises or web-search for an online copy. You can press
+        [Enter] to submit an answer and also to move to the next question.
       </p>
       <div className="row">
         <div className="col-md-4">
