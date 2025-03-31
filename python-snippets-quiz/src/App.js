@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect, useRef, useCallback } from "react";
@@ -89,8 +88,18 @@ function App() {
   };
 
   const handleSubmit = useCallback(() => {
-    const correct =
-      allQuestions[currentQuestionIndex].answer === currentAnswer.trim();
+    // Normalize both expected answer and given answer by removing spaces and replacing double quotes with single quotes
+    const normalizedExpectedAnswer = allQuestions[currentQuestionIndex].answer
+      .replace(/\s+/g, "")
+      .replace(/"/g, "'");
+    const normalizedGivenAnswer = currentAnswer
+      .trim()
+      .replace(/\s+/g, "")
+      .replace(/"/g, "'");
+
+    // Compare normalized answers
+    const correct = normalizedExpectedAnswer === normalizedGivenAnswer;
+
     setIsCorrect(correct);
     setQuestionAnswered(true);
 
@@ -111,6 +120,7 @@ function App() {
     currentAnswer,
     incorrectQuestions,
     streakCount,
+    reviewMode,
   ]);
 
   const handleNext = useCallback(() => {
